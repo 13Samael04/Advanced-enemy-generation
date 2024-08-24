@@ -19,7 +19,7 @@ public class Target : MonoBehaviour
 
         if (transform.position == _currentTargetPosition)
         {
-            _currentWaypoint = (_currentWaypoint + 1) % _waypoints.Length;
+            _currentWaypoint = ++_currentWaypoint % _waypoints.Length;
             UpdateCurrentTargetPosition();
         }
     }
